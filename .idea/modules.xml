@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Calculadora.iml" filepath="$PROJECT_DIR$/Calculadora.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Requisitos/Requisitos.iml" filepath="$PROJECT_DIR$/Requisitos/Requisitos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VersionAndroid/VersionAndroid.iml" filepath="$PROJECT_DIR$/VersionAndroid/VersionAndroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VersionEscritorio/VersionEscritorio.iml" filepath="$PROJECT_DIR$/VersionEscritorio/VersionEscritorio.iml" />
+    </modules>
+  </component>
+</project>

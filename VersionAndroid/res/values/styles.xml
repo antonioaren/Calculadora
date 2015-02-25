@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="btn_txt_port">
+        <item name="android:textSize">30sp</item>
+
+    </style>
+
+    <style name="display_port">
+        <item name="android:textSize">40sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:focusable">false</item>
+        <item name="android:editable">false</item>
+    </style>
+
+    <style name="digit_port" parent="btn_txt_port">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="point_port" parent="btn_txt_port">
+        <!--<item name="android:textStyle">bold</item>-->
+
+    </style>
+
+    <style name="operation_port" parent="btn_txt_port">
+
+
+    </style>
+
+    <style name="function_port">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+
+    
+    
+    <style name="btn_txt_land">
+        <item name="android:textSize">26sp</item>
+
+    </style>
+
+    <style name="display_land">
+        <item name="android:textSize">36sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:focusable">false</item>
+        <item name="android:editable">false</item>
+    </style>
+
+    <style name="digit_land" parent="btn_txt_land">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="point_land" parent="btn_txt_land">
+        <!--<item name="android:textStyle">bold</item>-->
+
+    </style>
+
+    <style name="operation_land" parent="btn_txt_land">
+
+
+    </style>
+
+    <style name="function_land">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+</resources>
