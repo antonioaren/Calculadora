@@ -11,6 +11,7 @@ import org.junit.Test;
 //Test del modelo de mi calculadora
 public class CalculatorModelTest {
     I_CalculatorModel myCalc;
+    //comentario prueba
 
     @Before
     public void setUp() throws Exception {
