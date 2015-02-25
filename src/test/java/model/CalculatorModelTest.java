@@ -35,7 +35,7 @@ public class CalculatorModelTest {
         myCalc.reset();
         assertTrue(myCalc.getResult() == 0);
     }
-
+// este ees el test de la suma
     // --------------------------------------------------------	
     @Test
     public void t01add01() throws Exception {
