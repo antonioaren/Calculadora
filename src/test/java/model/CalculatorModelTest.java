@@ -43,7 +43,7 @@ public class CalculatorModelTest {
         myCalc.add (5);
         assertTrue (myCalc.getResult() == 5);
     }
-
+// Otro comentario para este test probrado git
     @Test
     public void t01add02() throws Exception {
         myCalc.setResult(3);
