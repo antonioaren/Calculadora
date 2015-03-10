@@ -13,7 +13,7 @@ public class CalculatorPresenter implements I_CalculatorPresenter {
 	private String _savedOperand;
 	
 	public CalculatorPresenter (I_CalculatorModel model, I_CalculatorView view) {
-		set_model((I_CalculatorModel) model);
+		set_model((I_CalculatorModel) model);//preparando el modelo y vista del programa
 		set_view((I_CalculatorView) view);
 		_number = "0";
 		_savedOperand = "";
@@ -50,19 +50,20 @@ public class CalculatorPresenter implements I_CalculatorPresenter {
 	}
 
 	@Override
-	public void digitPressed(String c) {
-		Integer MaxInt = Integer.MAX_VALUE;
-		int MaxDigits = MaxInt.toString().length();
+	public void digitPressed(String c) {//presionar el digito
+		Integer MaxInt = Integer.MAX_VALUE;//longitud maxima de los digitos que pueden ser escrito
+		int MaxDigits = MaxInt.toString().length();//
 
 		if (_number.length() == MaxDigits) {
-			;
-		} else if (_number.equals("0")) {
+
+		} else if (_number.equals("0")) {// si el digito esta a "0" entonces este es cambiado para que aparezca el numero pulsado.
 			_number = c;
 		} else {
-			_number = _number + c;
+			_number = _number + c;//En caso de que sea un numero mas que uno solo, entonces con esta linea lo que hacemos es poner
+                                  // poner uno al lado del otro, es decir, que le suma el valor al lado derecho
 		}
 
-		displayNumber();
+		displayNumber();// lo pone a pantalla.
 	}
 
 	@Override
