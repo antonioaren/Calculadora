@@ -11,7 +11,6 @@ import org.junit.Test;
 //Test del modelo de mi calculadora
 public class CalculatorModelTest {
     I_CalculatorModel myCalc;
-    //comentario prueba
 
     @Before
     public void setUp() throws Exception {
@@ -43,7 +42,7 @@ public class CalculatorModelTest {
         myCalc.add (5);
         assertTrue (myCalc.getResult() == 5);
     }
-// Otro comentario para este test probrado git
+
     @Test
     public void t01add02() throws Exception {
         myCalc.setResult(3);

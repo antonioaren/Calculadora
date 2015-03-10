@@ -375,13 +375,7 @@ public class PresenterTests {
 		verify (get_viewMock(), times (2)).display("0");
 
 		verify (get_viewMock(), never()).displayWarning(anyString());
-	}
-    public void test09_backspace(){
-        get_presenter().digitPressed("0");
-        get_presenter().backspacePressed();
-        verify (get_viewMock(), times(2)).display ("");
-        verify (get_viewMock(), never()).displayWarning(anyString());
-    }
+	}	
 
 	// -------------------------------------------------------------------------------
 	//                                 Stress Tests
@@ -462,8 +456,6 @@ public class PresenterTests {
 			randomButton();
 		}
 	}
-
-
 
 	// Getters/setters ----------------------------------------------------------
 

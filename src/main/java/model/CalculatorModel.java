@@ -2,42 +2,41 @@ package model;
 public class CalculatorModel implements I_CalculatorModel {
 	private int _result;
 			
-	public CalculatorModel() { // Constructor de inicialización
-        _result = 0;
+	public CalculatorModel() {
+		_result = 0;
 	}
 	
 	@Override
-	public void add(int operand) throws Exception {// operación que suma
+	public void add(int operand) throws Exception {
 	    setResult (getResult() + operand);
 	}
 
 	@Override
-	public void subtract(int operand) throws Exception {// operacion que resta
-
+	public void subtract(int operand) throws Exception {
 	    setResult (getResult() - operand);
 	}
 
 	@Override
-	public void multiply(int operand) throws Exception {// operación que multiplica
+	public void multiply(int operand) throws Exception {
 	    setResult (getResult() * operand);		
 	}
 
 	@Override
-	public void divide(int operand) throws Exception {//Operación que divide
-		if (operand == 0) {// Si divide por 0
+	public void divide(int operand) throws Exception {
+		if (operand == 0) {
 	         throw new DivideByZero();
-		}else {
-            setResult(getResult() / operand);
-        }
+		}
+		
+	    setResult (getResult() / operand);
 	}
 	
 	@Override
-	public int getResult() {// devuelve el valor de _result
+	public int getResult() {
 		return _result;
 	}
 	
 	@Override
-	public void setResult(int value) {//es el metodo que pone el resultado.
+	public void setResult(int value) {
 		_result = value;
 	}
 
